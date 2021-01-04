@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CariKamar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="carikamar/Biru_Logo.png" style="width: 50px; height: 50px" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body style="background-color: #229bd7;">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" id="dropdownmenu" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Tentang Carikamar</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownmenu">
+                <a href="profil.html" class="dropdown-item">Profil Kami</a>
+                <a href="hubungi.html" class="dropdown-item active">Hubungi Kami</a>
+                <a href="mitra.html" class="dropdown-item">Mitra Kami</a>
+            </div>
+        </div>
+        <a href="info.html">Info</a>
+        <a href="https://carikamar.id">Blog</a>
+        <style>
+            .proff {
+
+                height: 1800px;
+            }
+        </style>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <script type="text/javascript">
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+            document.getElementById("main").style.marginLeft = "350px";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+    <div id="main">
+        <img src="images/stripes.png" width="30" height="30" style="margin-bottom: 50px; margin-left: 50px;"
+            onclick="openNav()" />Click Me!
+        <center>
+            <div class="row" style="justify-content: center;">
+                <div class="col-sm-4">
+                    <h2 style="font-family: Baloo Bhaijaan;">Hubungi Kami</h2>
+                    <hr style="width: 200px;">
+                    <p style="font-family: Baloo Bhaijaan;">Untuk informasi lebih lanjut tentang produk dan layanan kami, anda bisa menghubungi kami melalui
+                        kontak yang tersedia.</p>
+                        <br/>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <h5>Telepon:</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <form style="margin-top: 50px;">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nama" placeholder="Nama"/>
+                            <br/>
+                            <input type="email" class="form-control" name="email" placeholder="email@domain.com"/>
+                            <br/>
+                            <textarea class="form-control" name="pesan" rows="3" placeholder="Pesan"></textarea>
+                            <br/>
+                            <input type="button" class="btn btn-success" value="Kirim" style="background-color: #4BA517; width: 200px; border-radius: 50px;"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </center>
+    </div>
+</body>
+
+</html>
