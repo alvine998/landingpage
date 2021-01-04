@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CariKamar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="carikamar/Biru_Logo.png" style="width: 50px; height: 50px" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" id="dropdownmenu" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Tentang Carikamar</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownmenu">
+                <a href="profil.html" class="dropdown-item active">Profil Kami</a>
+                <a href="#" class="dropdown-item">Hubungi Kami</a>
+                <a href="#" class="dropdown-item">Mitra Kami</a>
+            </div>
+        </div>
+        <a href="#">Info</a>
+        <a href="https://carikamar.id">Blog</a>
+        <style>
+            .proff {
+                background-color: #229bd7;
+                height: 1000px;
+            }
+        </style>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <script type="text/javascript">
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "350px";
+            document.getElementById("main").style.marginLeft = "350px";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+    <div id="main">
+        <div class="proff">
+            <img src="images/stripes.png" width="30" height="30" style="margin-bottom: 50px; margin-left: 50px;"
+                onclick="openNav()" />Click Me!
+            <center class="fadein">
+                <img src="carikamar/Putih_Full_Vertikal.png" width="200" height="200" />
+                <br />
+                <h5 style="color: white;">CariKamar</h5>
+                <hr style="width: 100px;">
+                <p class="col-sm-5">CariKamar merupakan perusahaan yang bergerak di bidang Jasa Reservasi Hotel secara
+                    online yang
+                    didirikan pada tahun 2020 di Banyuwangi. CariKamar hadir sebagai solusi untuk mengurangi masalah
+                    konsumen dalam pencarian penginapan secara online. CariKamar yang dapat diakses dimanapun melalui
+                    Android dan website www.carikamar.id </p>
+                <br /><br />
+                <div class="row" style="justify-content: center;align-items: center;">
+                    <div class="col-sm-4">
+                        <h5 style="color: white;">Visi</h5>
+                        <hr style="width: 100px;">
+                        <p>Menjadi satu-satunya layanan booking hotel yang kompetitif, representative, dan inovatif
+                            dengan memiliki beragam fitur yang dapat memudahkan pengguna dalam setiap transaksi.</p>
+                    </div>
+                    <div class="col-sm-5">
+                        <h5 style="color: white;">Misi</h5>
+                        <hr style="width: 100px;">
+                        <p>1. Meningkatkan nilai okupansi unit Hotel milik setiap Mitra.</p>
+                        <p>2. Memberi solusi dan akses kemudahan bagi pengguna Aplikasi untuk mencari penginapan.</p>
+                        <p>3. Menjadi pelopor layanan booking Hotel yang inovatif dan representatif dengan
+                            memperkenalkan nilai-nilai kearifan lokal, adat dan budaya Indonesia kepada User baik secara
+                            domestik ataupun mancanegara. </p>
+                        <p>4. Menciptakan SDM yang berkualitas dengan menumbuhkan jiwa entrepreneur bagi kalangan muda</p>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

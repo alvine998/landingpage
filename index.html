@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CariKamar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="carikamar/Biru_Logo.png" style="width: 50px; height: 50px" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle" id="dropdownmenu" role="button" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">Tentang Carikamar</a>
+      <div class="dropdown-menu" aria-labelledby="dropdownmenu">
+        <a href="profil.html" class="dropdown-item">Profil Kami</a>
+        <a href="#" class="dropdown-item">Hubungi Kami</a>
+        <a href="#" class="dropdown-item">Mitra Kami</a>
+      </div>
+    </div>
+    <a href="#">Info</a>
+    <a href="https://carikamar.id">Blog</a>
+  </div>
+
+  <!-- Use any element to open the sidenav -->
+  <script type="text/javascript">
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "350px";
+      document.getElementById("main").style.marginLeft = "350px";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+    <section class="headter">
+      <img src="images/stripes.png" width="30" height="30" style="margin-bottom: 50px; margin-left: 50px;"
+        onclick="openNav()" />Click Me!
+      <center>
+        <div class="logo fadein">
+          <img class="slide" src="carikamar/Putih_Full_Horizontal.png" height="100" width="400" />
+        </div>
+      </center>
+    </section>
+    <section class="siders">
+      <center>
+        <div class="text fadein">
+          <h2>Keunggulan Kami Dari Aplikasi Lain</h2>
+          <hr style="width: 500px" />
+          <br />
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="images/coding-icon_document.png" width="50" height="50" />
+              <h5>Excellent Service</h5>
+              <p>
+                Operating System aplikasi CariKamar yang simple dan mudah. Salah
+                satu keunggulan yang dimiliki CariKamar adalah penggunaan
+                Augmented Reality (AR) dalam memvisualisasikan kamar hotel.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <img src="images/coding-icon_levels.png" width="50" height="50" />
+              <h5>Product Solution</h5>
+              <p style="justify-items: end">
+                Bagi CariKamar pelayanan terbaik adalah prioritas utama dan
+                pelanggan adalah raja. Kami menyediakan layanan 24 jam yang akan
+                selalu sigap dan tanggap terhadap semua kritik dan saran
+                konsumen.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <img src="images/coding-icon_brain.png  " width="50" height="50" />
+              <h5>Educative Trip</h5>
+              <p>
+                CariKamar berusaha menyediakan semua kebutuhan liburan konsumen
+                tidak hanya dalam bentuk pelayanan akomodasi melainkan juga
+                dalam hal informasi.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <img src="images/coding-icon_ux.png" width="50" height="50" />
+              <h5>Problem Solving</h5>
+              <p>
+                CariKamar akan berusaha sebaik mungkin memberikan pengalaman
+                terbaik untuk konsumen sehingga konsumen dapat melakukan repeat
+                order pada agenda liburan selanjutnya.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <img src="images/coding-icon_stats.png" width="50" height="50" />
+              <h5>Consulting Product & Service</h5>
+              <p>
+                CariKamar akan memberikan pendampingan khusus terhadap mitra
+                hotel. Hal ini semata untuk membantu mitra supaya dapat
+                berkembang bersama memajukan pariwisata dan perekonomian daerah.
+              </p>
+            </div>
+          </div>
+        </div>
+      </center>
+    </section>
+    <section class="siders2">
+      <center>
+        <div class="text fadein">
+          <h2>CariKamar Kini Gak Pake Ribet!</h2>
+          <br />
+          <div class="row">
+            <div class="col-sm-4">
+              <h5>1. Download di Playstore atau AppStore</h5>
+              <br />
+              <a href="https://play.google.com/store/apps/details?id=id.kunya.carikamarnet"><img
+                  src="images/appstore.png" width="200" height="150" /></a>
+            </div>
+            <div class="col-sm-4">
+              <h5>2. Pilih Menu Hotel</h5>
+              <img src="images/SS_6.png" width="200" height="400" />
+            </div>
+            <div class="col-sm-4">
+              <h5>3. Sesuaikan Jadwal Yang Kamu Mau</h5>
+              <img src="images/MockUp Transparan/SS_13.png" width="200" height="400" />
+            </div>
+            <div class="col-sm-4">
+              <h5>4. Pilih Hotel Yang Kamu Suka</h5>
+              <img src="images/MockUp Transparan/SS_19.png" width="200" height="400" />
+            </div>
+            <div class="col-sm-4">
+              <h5>5. Bayar dan Liburan!</h5>
+              <br />
+              <img src="images/cuss.png" width="200" height="200" />
+            </div>
+          </div>
+        </div>
+      </center>
+    </section>
+    <section class="footre">
+      <center>
+        <div class="text fadein">
+          <hr />
+          <br />
+          <div class="row">
+            <div class="col-sm-4">
+              <h5>Kontak Kami</h5>
+              <hr style="width: 150px" />
+              <p>Email : info@carikamar.id</p>
+              <p>Call Center : (0333) 3388457</p>
+              <p>Whatsapp : (+62)815 1525 0799</p>
+            </div>
+            <div class="col-sm-4">
+              <h5>Menu Utama</h5>
+              <hr style="width: 150px" />
+              <a href="index.html">Home</a><br />
+              <a href="https://carikamar.id">Blog</a><br />
+              <a href="#">Info</a>
+            </div>
+            <div class="col-sm-4">
+              <h5>Tentang CariKamar</h5>
+              <hr style="width: 150px" />
+              <a href="profil.html">Profil Kami</a><br />
+              <a href="#">Mitra Kami</a><br />
+              <a href="#">Hubungi Kami</a>
+            </div>
+            <div class="col-sm-4">
+              <h5></h5>
+              <a href="#"></a><br />
+              <a href="#"></a><br />
+              <a href="#"></a>
+            </div>
+            <div class="col-sm-4">
+              <h5>Lokasi</h5>
+              <hr style="width: 100px" />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.1964420160195!2d114.35003722914226!3d-8.224286699630099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15bc0ef9d2bf7%3A0x1d5c8b3634744109!2sCV.%20Inovisi%20Artha%20Land!5e0!3m2!1sid!2sid!4v1609308645207!5m2!1sid!2sid"
+                width="400" height="300" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </center>
+    </section>
+  </div>
+
+</body>
+
+</html>
